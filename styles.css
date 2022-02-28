@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('background.png');
+    background-size: 100%;
+}
+
+#message-container {
+    background-color: rgba(255, 253, 251, 0.521);
+    width: 50%;
+    max-width: 1200px;
+    margin-top: 20vh;
+    padding: 20px;
+    height: 50vh;
+    overflow: scroll;
+    border-radius: 2%;
+}
+
+#message-container div {
+    padding: 5px;
+    text-align: left;
+}
+
+#message-container div:nth-child(2n) {}
+
+#send-container {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 10vh;
+    background-color: white;
+    max-width: 1200px;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    background-color: rgba(131, 93, 37, 0);
+}
+
+#message-input {
+    flex-grow: 1;
+}
+
+#typing {
+    bottom: 100px;
+    position: absolute;
+    color: brown;
+}
